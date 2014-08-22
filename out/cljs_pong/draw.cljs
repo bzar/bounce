@@ -1,9 +1,13 @@
 (ns cljs-pong.draw
-  (:require [cljs-pong.config :as config]))
+  (:require [cljs-pong.config :as config]
+            [dommy.utils :as utils]
+            [dommy.core :as dommy])
+  (:use-macros
+    [dommy.macros :only [sel1]]))
 
 (def draw-color "rgba(213, 115, 230, 1)")
 
-(def draw-surface (let [canvas (.getElementById js/document "canvas")
+(def draw-surface (let [canvas (sel1 :#canvas)
                         ctx (.getContext canvas "2d")]
                     (set! (.-fillStyle ctx) draw-color)
                     (set! (.-strokeStyle ctx) draw-color)
@@ -45,8 +49,8 @@
     (.fillRect draw-surface x y width height)))
 
 (defn- draw-score [id score]
-  (let [elem (.getElementById js/document id)]
-    (set! (.-innerHTML elem) (str score))))
+  (-> (sel1 id)
+      (dommy/set-text! (str score))))
 
 (defn draw-game [state]
   (clear)
@@ -56,5 +60,5 @@
   (draw-paddle (:paddle-2 state))
   (if (:score-changed state)
     (let [scores (:score state)]
-      (draw-score "player-1-score" (:player-1 scores))
-      (draw-score "player-2-score" (:player-2 scores)))))
+      (draw-score :#player-1-score (:player-1 scores))
+      (draw-score :#player-2-score (:player-2 scores)))))

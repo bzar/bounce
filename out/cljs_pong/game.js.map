@@ -13,7 +13,7 @@
   "cljs-pong.paddle/paddle-rect", "cljs-pong.game/update-score",
   "score", "ball", "x", "p1-goal", "p2-goal", "p1-score", "p2-score",
   "cljs.core/assoc", "cljs-pong.game/running?", "cljs.core/not",
-  "p1__4829#", "cljs.core/some", "cljs.core/=", "cljs.core/vals",
+  "p1__5272#", "cljs.core/some", "cljs.core/=", "cljs.core/vals",
   "cljs-pong.game/update-state", "state", "actions", "player-1",
   "player-2", "updated-paddle-1", "cljs-pong.paddle/move-paddle",
   "updated-paddle-2", "moved-ball", "cljs-pong.ball/move-ball",

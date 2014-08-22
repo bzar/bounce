@@ -37,10 +37,10 @@ cljs_pong.paddle.decelerate = (function decelerate(velocity){if((cljs_pong.math.
 {return (velocity + ((-1 * cljs_pong.math.sign.call(null,velocity)) * cljs_pong.paddle.deceleration));
 }
 });
-cljs_pong.paddle.calculate_new_velocity = (function calculate_new_velocity(velocity,action){var G__4841 = action;if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"down","down",1016993812),G__4841))
+cljs_pong.paddle.calculate_new_velocity = (function calculate_new_velocity(velocity,action){var G__5278 = action;if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"down","down",1016993812),G__5278))
 {return cljs_pong.paddle.accelerate.call(null,cljs.core._PLUS_,velocity);
 } else
-{if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"up","up",1013907981),G__4841))
+{if(cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"up","up",1013907981),G__5278))
 {return cljs_pong.paddle.accelerate.call(null,cljs.core._,velocity);
 } else
 {if(new cljs.core.Keyword(null,"else","else",1017020587))

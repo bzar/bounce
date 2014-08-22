@@ -1,16 +1,18 @@
 {"version":3,
  "file":"/Users/janne/projects/cljs-pong/out/cljs_pong/keyhandler.js",
  "sources":["keyhandler.cljs"],
- "lineCount":47,
+ "lineCount":56,
  "mappings":
- ";AAAA;;AAEA,AAAKA,qCAAc,yBAAA,2CAAA,6DAAA,qDAAA,6DAAA,nPAACC;AAGpB,0CAAA,uCAAA,jFAAOC,uEAAoBC,UACzB,IAAAC,mBAAA,AAAA,GAAA,AAAAC,yBAAA,GAAAD,xCAAMD;CAAN,0FAAA,6DAAA;;CAAA,GAAA,AAAAE,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA,AAAAC,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA,AAAAC,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA;CAAA;;CAAA;;;;;;;AAOF,gCAAA,6BAAA,7DAAOE,mDAAUH,UACf,yEAAA,rEAAMI,SAAO,AAACL,kDAAmBC,UAC/B,GAAI,EAAK,yBAAA,zBAACE,mFAAWE;CACnB,OAACC,+BAAMR,mCAAcS,eAAKF;;CAD5B;;;AAGJ,8BAAA,2BAAA,zDAAOG,+CAAQP,UACb,8SAAA,1SAAMI,SAAO,AAACL,kDAAmBC,cAC3BQ,SAAO,AAACC,0BAAML,YACdM,wBAAsB,wBAAA,AAAAC,xBAACC,kDAAKf,oCAAcW,YAC1CK,uBAAqB,AAACC,yBAAKV,QAC/B,GAAI,AAACF,yBAAEQ,sBAAsBG;CAC3B,wFAAA,0FAAA,3KAACR,+BAAMR,mCAAcS,kGAAME;;CAD7B;;;AAGJ,0CAAA,+BAAA,AAAA,OAAAG,hFAAMI,0GAAuBlB;;AAE7B,6CAAA,kCAAA,/EAAMmB,+EACJ,qBAAA,WAAAC,iBAAA,jDAAM,AAAaC,iDAAc,OAACf,wCAAS,AAAAc;;AAC3C,0BAAA,WAAAE,iBAAA,/CAAM,AAAWD,+CAAc,OAACX,sCAAO,AAAAY",
+ ";AAAA;;AAEA,AAAKA,qCAAc,yBAAA,2CAAA,6DAAA,qDAAA,6DAAA,nPAACC;AAGpB,sCAAA,tCAAKC;AAEL,0CAAA,uCAAA,jFAAOC,uEAAoBC,UACzB,IAAAC,mBAAA,AAAA,GAAA,AAAAC,yBAAA,GAAAD,xCAAMD;CAAN,0FAAA,6DAAA;;CAAA,GAAA,AAAAE,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA,AAAAC,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA,AAAAC,yBAAA,GAAAD;CAAA,0FAAA,6DAAA;;CAAA,GAAA;CAAA;;CAAA;;;;;;;AAOF,gCAAA,6BAAA,7DAAOE,mDAAUH,UACf,IAAAI,iFAAA,AAAA,oBAAAA,hFAAgB,AAACL,kDAAmBC;CAApC,aAAAI,mBAAA,5BAASC,4BACP,OAACC,+BAAMV,mCAAcW,eAAKF;;CAD5B;;;AAGF,8BAAA,wCAAA,tEAAOG,+CAAQR,SAASS,cACtB,GAAI,AAACP,yBAAEJ,oCAAeE;CACpB,OAACS;;CACD,IAAAL,iFAAA,AAAA,oBAAAA,hFAAgB,AAACL,kDAAmBC;CAApC,aAAAI,mBAAA,5BAASC,4BACP,qOAAA,jOAAMK,SAAO,AAACC,0BAAMN,YACdO,wBAAsB,wBAAA,AAAAC,xBAACC,kDAAKlB,oCAAcc,YAC1CK,uBAAqB,AAACC,yBAAKX,QAC/B,GAAI,AAACH,yBAAEU,sBAAsBG;CAC3B,wFAAA,0FAAA,3KAACT,+BAAMV,mCAAcW,kGAAMG;;CAD7B;;;CAJJ;;;;AAOJ,0CAAA,+BAAA,AAAA,OAAAG,hFAAMI,0GAAuBrB;;AAE7B,6CAAA,8CAAA,3FAAMsB,6EAAuBT,cAC3B,qBAAA,WAAAU,iBAAA,jDAAM,AAAaC,iDAAc,OAACjB,wCAAS,AAAAgB;;AAC3C,0BAAA,WAAAE,iBAAA,/CAAM,AAAWD,+CAAc,OAACZ,sCAAO,AAAAa,wBAAcZ",
  "names":
  ["cljs-pong.keyhandler/player-action", "cljs.core/atom",
-  "cljs-pong.keyhandler/key-code-to-action", "key-code", "G__4802",
-  "cljs.core/=", "cljs-pong.keyhandler/key-down", "action",
-  "cljs.core/swap!", "cljs.core/conj", "cljs-pong.keyhandler/key-up",
-  "player", "cljs.core/first", "current-player-action",
-  "cljs.core/deref", "cljs.core/get", "key-up-player-action",
-  "cljs.core/last", "cljs-pong.keyhandler/get-player-actions",
-  "cljs-pong.keyhandler/register-key-handlers", "p1__4803#",
-  "js/document", "p1__4804#"]}
+  "cljs-pong.keyhandler/game-start-key",
+  "cljs-pong.keyhandler/key-code-to-action", "key-code", "G__5274",
+  "cljs.core/=", "cljs-pong.keyhandler/key-down", "temp__4090__auto__",
+  "action", "cljs.core/swap!", "cljs.core/conj",
+  "cljs-pong.keyhandler/key-up", "game-starter", "player",
+  "cljs.core/first", "current-player-action", "cljs.core/deref",
+  "cljs.core/get", "key-up-player-action", "cljs.core/last",
+  "cljs-pong.keyhandler/get-player-actions",
+  "cljs-pong.keyhandler/register-key-handlers", "p1__5275#",
+  "js/document", "p1__5276#"]}

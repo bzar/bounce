@@ -16,5 +16,5 @@
   "cljs-pong.paddle/accelerate", "f", "new-velocity",
   "cljs-pong.math/abs", "cljs-pong.paddle/decelerate",
   "cljs-pong.math/sign", "cljs-pong.paddle/calculate-new-velocity",
-  "action", "G__4841", "cljs.core/=", "cljs.core/-", "cljs.core/+",
+  "action", "G__5278", "cljs.core/=", "cljs.core/-", "cljs.core/+",
   "cljs-pong.paddle/move-paddle"]}

@@ -29,10 +29,10 @@ cljs_pong.ball.point_in_rect = (function point_in_rect(point,rect){var and__3431
 {return and__3431__auto__;
 }
 });
-cljs_pong.ball.points_in_rect = (function points_in_rect(points,rect){return cljs.core.some.call(null,(function (p1__4838_SHARP_){return cljs_pong.ball.point_in_rect.call(null,p1__4838_SHARP_,rect);
+cljs_pong.ball.points_in_rect = (function points_in_rect(points,rect){return cljs.core.some.call(null,(function (p1__4793_SHARP_){return cljs_pong.ball.point_in_rect.call(null,p1__4793_SHARP_,rect);
 }),points);
 });
-cljs_pong.ball.ball_hits_rects = (function ball_hits_rects(ball,rects){var points = cljs_pong.ball.ball_edge_points.call(null,ball);return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__4839_SHARP_){return cljs_pong.ball.points_in_rect.call(null,points,p1__4839_SHARP_);
+cljs_pong.ball.ball_hits_rects = (function ball_hits_rects(ball,rects){var points = cljs_pong.ball.ball_edge_points.call(null,ball);return cljs.core.first.call(null,cljs.core.filter.call(null,(function (p1__4794_SHARP_){return cljs_pong.ball.points_in_rect.call(null,points,p1__4794_SHARP_);
 }),rects));
 });
 cljs_pong.ball.next_ball_pos = (function next_ball_pos(ball){var angle = new cljs.core.Keyword(null,"angle","angle",1106865221).cljs$core$IFn$_invoke$arity$1(ball);var x = new cljs.core.Keyword(null,"x","x",1013904362).cljs$core$IFn$_invoke$arity$1(ball);var y = new cljs.core.Keyword(null,"y","y",1013904363).cljs$core$IFn$_invoke$arity$1(ball);var delta_h = new cljs.core.Keyword(null,"speed","speed",1123546041).cljs$core$IFn$_invoke$arity$1(ball);var delta_x = (delta_h * cljs_pong.math.cos.call(null,angle));var delta_y = (delta_h * cljs_pong.math.sin.call(null,angle));var new_x = (x + delta_x);var new_y = (y + delta_y);return cljs.core.assoc.call(null,ball,new cljs.core.Keyword(null,"x","x",1013904362),new_x,new cljs.core.Keyword(null,"y","y",1013904363),new_y);
