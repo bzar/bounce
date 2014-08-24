@@ -12,7 +12,7 @@ h1 {
   width: 500px;
 }
 
-canvas {
+#canvas {
   margin: auto auto;
   display: block;
   width: 600px;
